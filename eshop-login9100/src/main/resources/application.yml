@@ -1,6 +1,7 @@
 #服务端口
 server:
   port: 9100
+server.s
 spring:
   application:
     #应用名称
@@ -9,6 +10,10 @@ spring:
     nacos:
       discovery:
         server-addr: localhost:8848
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+        port: 8719
   #数据库配置
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
