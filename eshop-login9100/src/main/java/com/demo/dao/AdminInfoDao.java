@@ -11,4 +11,5 @@ import org.apache.ibatis.annotations.Mapper;
 public interface AdminInfoDao {
     //通过用户名密码查询用户
     public AdminInfo SelectByNameByPasswd(AdminInfo adminInfo);
+    public int createAdminInfo(AdminInfo adminInfo);
 }

@@ -11,4 +11,7 @@
     <select id="SelectByNameByPasswd" parameterType="adminInfo" resultMap="baseMap">
         select id,name,pwd from admin_info where name=#{username} and pwd=#{password}
     </select>
+    <insert id="createAdminInfo" parameterType="adminInfo">
+        insert into admin_info (id,name,pwd) values (null,#{username},#{password})
+    </insert>
 </mapper>

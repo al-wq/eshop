@@ -24,4 +24,14 @@ public class AdminInfoServiceImpl implements AdminInfoService {
     public AdminInfo login(AdminInfo adminInfo) {
         return adminInfoDao.SelectByNameByPasswd(adminInfo);
     }
+
+    /**
+     * 用户注册
+     * @param adminInfo
+     * @return
+     */
+    @Override
+    public int register(AdminInfo adminInfo) {
+        return adminInfoDao.createAdminInfo(adminInfo);
+    }
 }

@@ -34,5 +34,5 @@ logging:
     max-size: 10MB
   #    path: D:\SOURCE\logs\eshop\login
   #日志级别，在springboot2.0之后需要加入toot才可以
-  level:
-    root: debug
+#  level:
+#    root: debug
