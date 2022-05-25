@@ -13,6 +13,7 @@
         <module>eshop-order9001</module>
         <module>eshop-login9100</module>
         <module>common-api</module>
+        <module>eshop-sso9000</module>
     </modules>
 
 
